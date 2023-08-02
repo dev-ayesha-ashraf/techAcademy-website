@@ -85,39 +85,7 @@ setInterval(() => {
 }, 30)
 
 // login
-function validateForm() {
-    // Get input values
-    var username = document.getElementById("username").value;
-    var phoneNumber = document.getElementById("phone_number").value;
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirm_password").value;
 
-    // Validation rules
-    var usernamePattern = /^[a-zA-Z0-9]{5,}$/;
-    var phonePattern = /^\d{10}$/;
-
-    // Validation checks
-    if (!username.match(usernamePattern)) {
-      alert("Username should be at least 5 characters long and can only contain letters and numbers.");
-      return false;
-    }
-
-    if (!phoneNumber.match(phonePattern)) {
-      alert("Phone number should be exactly 10 digits long.");
-      return false;
-    }
-
-    if (password.length < 8) {
-      alert("Password should be at least 8 characters long.");
-      return false;
-    }
-
-    if (password !== confirmPassword) {
-      alert("Passwords do not match.");
-      return false;
-    }
-
-    return true;}
 // faqs
 
 function toggleAnswer(questionNumber) {
